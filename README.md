@@ -34,7 +34,7 @@ project/
 │   ├── L2.fasta
 │   ├── ...
 │── genome_comparison2/                  # Dossier des résultats générés
-``
+```
 
 
 ## 🎬 Exécution
@@ -45,12 +45,12 @@ Pour exécuter le pipeline, suivez les étapes suivantes :
 
 ```bash
 chmod +x Script_complet3.sh
-``
+```
 Lancez le script avec le chemin vers le génome de référence (H37Rv) :
 
 ```bash
     ./Script_complet3.sh $path_of_ref_genome
-``
+```
 
 ## 📝 Résultats attendus
 
@@ -72,14 +72,14 @@ Installation de vcfpy :
 
 ```bash
 pip install vcfpy
-``
+```
 🎬 Exécution
 
 Pour lancer le script, utilisez la commande suivante :
 
 ```bash
 python Mask_vcf_all.py Lx_comparison.vcf.gz Mask_H37Rv.bed Mask_Lx.bed Lx_mask_N.vcf.gz
-``
+```
 
 📁 Structure des fichiers
 ```bash
@@ -126,7 +126,7 @@ project/
 │── filtre_scenario1.sh            # Script Bash pour l'analyse des variants
 │── Lx_mask_N.vcf.gz               # Fichier VCF compressé après masquage
 │── Tableau_scenario.csv          # Fichier CSV généré avec les résultats des scénarios
-``
+``` 
 
 📄 Résumé
 
