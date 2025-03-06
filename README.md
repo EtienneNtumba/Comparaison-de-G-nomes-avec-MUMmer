@@ -21,3 +21,17 @@ Installez les outils nécessaires en exécutant la commande suivante :
 ```bash
 sudo apt update && sudo apt install -y mummer samtools bcftools tabix
 
+
+## 📁 Structure des fichiers
+
+Voici l'organisation des fichiers dans le projet :
+
+project/
+│── Script_complet3.sh                   # Script principal
+│── Reference_genome.fasta               # Génome de référence
+│── QUERY_DIR/                           # Dossier des génomes spécifiques
+│   ├── L1.fasta
+│   ├── L2.fasta
+│   ├── ...
+│── genome_comparison2/                  # Dossier des résultats générés
+
