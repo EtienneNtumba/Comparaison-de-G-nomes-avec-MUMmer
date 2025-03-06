@@ -136,6 +136,12 @@ Ce projet permet de :
     Masquer certaines régions génomiques dans les fichiers VCF.
     Analyser les variants détectés selon plusieurs scénarios et résumer les résultats dans un fichier CSV.
 
+## 📝 Auteur
+
+- **Nom**: Etienne Ntumba
+- **Email**: etienne.ntumba.kabongo@umontreal.ca
+- **GitHub**: [EtienneNtumba](https://github.com/EtienneNtumba)
+
 
 
 
