@@ -20,7 +20,7 @@ Installez les outils nécessaires en exécutant la commande suivante :
 
 ```bash
 sudo apt update && sudo apt install -y mummer samtools bcftools tabix
-
+```
 
 ## 📁 Structure des fichiers
 
