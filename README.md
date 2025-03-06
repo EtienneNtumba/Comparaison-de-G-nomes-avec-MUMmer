@@ -25,7 +25,7 @@ sudo apt update && sudo apt install -y mummer samtools bcftools tabix
 ## 📁 Structure des fichiers
 
 Voici l'organisation des fichiers dans le projet :
-
+```bash
 project/
 │── Script_complet3.sh                   # Script principal
 │── Reference_genome.fasta               # Génome de référence
@@ -34,7 +34,7 @@ project/
 │   ├── L2.fasta
 │   ├── ...
 │── genome_comparison2/                  # Dossier des résultats générés
-
+``
 
 
 ## 🎬 Exécution
@@ -45,11 +45,12 @@ Pour exécuter le pipeline, suivez les étapes suivantes :
 
 ```bash
 chmod +x Script_complet3.sh
-
+``
 Lancez le script avec le chemin vers le génome de référence (H37Rv) :
 
 ```bash
     ./Script_complet3.sh $path_of_ref_genome
+``
 
 ## 📝 Résultats attendus
 
@@ -71,22 +72,24 @@ Installation de vcfpy :
 
 ```bash
 pip install vcfpy
-
+``
 🎬 Exécution
 
 Pour lancer le script, utilisez la commande suivante :
 
 ```bash
 python Mask_vcf_all.py Lx_comparison.vcf.gz Mask_H37Rv.bed Mask_Lx.bed Lx_mask_N.vcf.gz
+``
 
 📁 Structure des fichiers
-
+```bash
 project/
 │── Mask_vcf_all.py                # Script Python pour masquer les variants
 │── Lx_comparison.vcf.gz           # Fichier VCF compressé
 │── Mask_H37Rv.bed                 # Fichier BED pour le masque REF
 │── Mask_Lx.bed                    # Fichier BED pour le masque ALT
 │── Lx_mask_N.vcf.gz               # Fichier VCF de sortie avec régions masquées
+```
 
 📊 Étape 3 : Analyse des Variants dans un Fichier VCF Comprimé
 
@@ -108,7 +111,7 @@ Installation sous Ubuntu (si nécessaire) :
 
 ```bash
 sudo apt update && sudo apt install gzip gawk
-
+```
 🎬 Exécution
 
 Pour exécuter le script, utilisez la commande suivante :
@@ -116,13 +119,14 @@ Pour exécuter le script, utilisez la commande suivante :
 ```bash
 chmod +x filtre_scenario1.sh
 ./filtre_scenario1.sh Lx_mask_N.vcf.gz Tableau_scenario.csv
-
+``` 
 📁 Structure des fichiers
-
+```bash
 project/
 │── filtre_scenario1.sh            # Script Bash pour l'analyse des variants
 │── Lx_mask_N.vcf.gz               # Fichier VCF compressé après masquage
 │── Tableau_scenario.csv          # Fichier CSV généré avec les résultats des scénarios
+``
 
 📄 Résumé
 
