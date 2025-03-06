@@ -37,19 +37,21 @@ project/
 
 
 
-🎬 Exécution
+## 🎬 Exécution
 
 Pour exécuter le pipeline, suivez les étapes suivantes :
 
     Rendez le script principal exécutable :
 
+```bash
 chmod +x Script_complet3.sh
 
 Lancez le script avec le chemin vers le génome de référence (H37Rv) :
 
+```bash
     ./Script_complet3.sh $path_of_ref_genome
 
-📝 Résultats attendus
+## 📝 Résultats attendus
 
 Après exécution, dans le dossier genome_comparison2/, vous obtiendrez :
 
@@ -58,7 +60,8 @@ Après exécution, dans le dossier genome_comparison2/, vous obtiendrez :
     L1_comparison.vcf.gz.tbi : Index du fichier VCF.
 
 Le même résultat sera généré pour d'autres génomes comme L2, L3, etc.
-🔒 Étape 2 : Script de Masquage des Variants dans un Fichier VCF
+
+## 🔒 Étape 2 : Script de Masquage des Variants dans un Fichier VCF
 
 Ce script Python permet de modifier les bases de référence (REF) et alternatives (ALT) dans un fichier VCF en fonction de régions spécifiques définies dans des fichiers BED. Il remplace les bases par "N" si elles se trouvent dans ces régions.
 🛠️ Prérequis
@@ -66,12 +69,14 @@ Ce script Python permet de modifier les bases de référence (REF) et alternativ
 Avant d'exécuter ce script, vous devez installer Python 3.x et le module vcfpy.
 Installation de vcfpy :
 
+```bash
 pip install vcfpy
 
 🎬 Exécution
 
 Pour lancer le script, utilisez la commande suivante :
 
+```bash
 python Mask_vcf_all.py Lx_comparison.vcf.gz Mask_H37Rv.bed Mask_Lx.bed Lx_mask_N.vcf.gz
 
 📁 Structure des fichiers
@@ -101,12 +106,14 @@ Avant d'exécuter ce script, assurez-vous d'avoir installé :
 
 Installation sous Ubuntu (si nécessaire) :
 
+```bash
 sudo apt update && sudo apt install gzip gawk
 
 🎬 Exécution
 
 Pour exécuter le script, utilisez la commande suivante :
 
+```bash
 chmod +x filtre_scenario1.sh
 ./filtre_scenario1.sh Lx_mask_N.vcf.gz Tableau_scenario.csv
 
